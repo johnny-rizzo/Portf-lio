@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/dd2c2ef0d1.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.fonte{
+font-family: 'roboto';
+
+}
+
+.container{
+margin: 0px;
+display: flex;
+}
+
+.headers{
+ background-color: rgba(11, 142, 230, 0);
+}
+
+.grow:hover{
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+.fade
+{
+ opacity:50;
+}
+.fade:hover
+{
+ opacity:1;
+}
+.container-login100::before {
+content: "";
+
+position:absolute;
+z-index: -1;
+width: 100%;
+height: 100%;
+
+background: #005bea;
+background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+background: linear-gradient(bottom, #005bea, #00c6fb);
+opacity: 0.5;
+}
+
+.divcard {
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.containerfooter {
+
+width: 100%;
+height: 100%;
+
+background: #005bea;
+background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+background: linear-gradient(bottom, #005bea, #00c6fb);
+}
+.containernav {
+
+width: 100%;
+height: 100%;
+
+background: #005bea;
+background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+background: linear-gradient(bottom, #005bea, #00c6fb);
+
+}
+
+.rank {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius:25px;
+  box-sizing: border-box;
+}
+</style>
+<body class="container-login100 " style="background-image: url(assets/img/pexels-photo-256453.jpeg);background-repeat:no-repeat; background-size: cover">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fonte containernav">
+    <div class="collapse navbar-collapse" role="application" id="navbarNav">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link grow mr-4 font-weight-bold font-italic" href="#Home">| Home |<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link grow mr-4 font-weight-bold font-italic" href="#experiencia">| Experiência |</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link grow mr-4 font-weight-bold font-italic" href="#formacao">| Formação Acadêmica |</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link grow mr-4 font-weight-bold font-italic" href="#projetos">| Projetos |</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link grow mr-4 font-weight-bold font-italic" href="#competencias">| Competências |</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link grow mr-4 font-weight-bold font-italic" href="#contato">| Contato |</a>
+          </li>
+      </ul>
+    </div>
+   </nav>
+      <header>
+           <h1 id="sobremim" class="headers text-center shadow p-3 mb-4 rounded font-weight-bold font-italic fonte text-light ">Bem Vindes</h1>
+      </header>
+      <div class="container col-md-12">
+        <img class="card-img-top rounded-circle shadow-sm p-3 mb-5 bg-info rounded"  height="450" img src="assets/img/IMG-20210321-WA0037 (1).jpg" de capa do card"  >
+        <p class=" fonte text-justify ml-4 text-light mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati libero neque dolore, assumenda vero illo! Magnam consequatur laudantium repellat inventore nulla nesciunt asperiores provident officiis, tempora rem libero alias! </p>
+      </div>
+    <br>
+
+    <header>
+  <h1 id="experiencia" class="headers text-center shadow p-3 mb-4 rounded font-weight-bold font-italic fonte text-light">Experiência</h1>
+    </header>
+     <div class="container m-auto ">
+      <div class="card mr-4 borda shadow-lg  bg-white rounded" style="width: 20rem;">
+        <div class="card-body ">
+         <h5 class="card-title text-center fonte  font-weight-bold">Isolution</h5>
+          <img class="card-img-top" height="185" src="https://iguatemi.com.br/marketplace/sites/marketplace/files/2018-03/ISolution.png"alt="Imagem de capa do card">
+           <p class="card-text fonte font-weight-bold">Gerente de Loja | Fev 2019 - Fev 2020</p>
+        </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item fonte text-justify"> 
+        <p>Gerenciamento de 2 unidades (quiosque e loja), venda de
+          produtos, inspeção de produtos, prospecção de cliente, tele
+          atendimento, treinamento de novos funcionários, treinamento de
+          gerentes, inventário, parcerias e fechamento de caixa.
+          </p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card mr-4 ml-4 shadow-lg  bg-white rounded" style="width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title text-center fonte font-weight-bold">Kelly Services (Samsung)</h5>
+      <img class="card-img-top" height="185" src="https://image3.mouthshut.com/images/imagesp/925845464s.png" alt="Imagem de capa do card">
+    <br>
+      <p class="card-text fonte font-weight-bold">Téc. da Qualidade | Set 2016 - Nov 2017
+      </p>
+      
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item fonte "> 
+        <p>Testes nos aparelhos utilizando tecnologia especifica da empresa,
+          testes visuais, testes manuais, aplicação de treinamentos, preenchimento de
+          relatórios e auditorias internas.
+          </p>
+         <br>
+         
+      </li>
+    </ul>
+  </div>
+
+  <div class="card mr-4 shadow-lg  bg-white rounded" style="width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title text-center fonte  font-weight-bold">Decoridea</h5>
+      <img class="card-img-top" height="180" src="data:image/png;base64,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"alt="Imagem de capa do card">
+      <p class="card-text fonte font-weight-bold">Ass. da Qualidade
+        | Out 2013 - Abril 2016
+      </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item fonte text-justify"> 
+        <p>Testes da qualidade nos produtos da empresa, teste de corte,
+          resistência, temperatura, testes químicos, aplicação de
+          treinamentos, arquivista, inspeção visual, inspeção final e
+          preenchimento de relatórios.
+          </p>
+          <br>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  <br>
+<header>
+    <h1 id="formacao"  class="headers text-center shadow p-3 mb-4 rounded font-weight-bold font-italic fonte text-light">Formação Acadêmica</h1>
+</header>
+
+
+    <hr>
+    <header>
+      <h1 class=" headers text-center shadow p-3 mb-4 rounded font-weight-bold font-italic fonte text-light" id="projetos" >Projetos</h1>
+    </header>
+      <div class="card-deck">
+        <div class="card divcard ml-4">
+          <img class="card-img-top" height="250" src="assets/img/imagem_2021-05-13_101130.png" alt="Beequalite">
+          <div class="card-body ">
+            <h5 class="card-title text-center">BeeQualité</h5>
+            <p class="card-text justify-content">BEEqualité é uma rede social criada para desenvolver e inserir mulheres no mercado tecnológico, que foi observado na quinta ODS da Onu, sobre igualdade de gênero e mapeado no mercado que mulheres no mercado tecnológico são minoria, e as que estão nesse mercado passa por situações de exclusão, por isso nascemos nosso intuito é mostrar que essa área é para você!</p>
+          </div>
+          <div class="card-footer text-center fonte">
+            <a href="https://beequalite.herokuapp.com/#/sobre" target="blank" class="font-weight-bold  fonte text-">BEEqualite</a>
+          </div>
+        </div>
+
+        <div class="card divcard">
+          <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dri Massagens</h5>
+            <p class="card-text">Criei essa página web para uma amiga, a página serviu para aprimorar meus conhecimentos e testar efeitos, cores, espaçamentos novos.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Atualizados 3 minutos atrás</small>
+          </div>
+        </div>
+
+        <div class="card divcard mr-4">
+          <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Blog Pessoal</h5>
+            <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Atualizados 3 minutos atrás</small>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+                                            <!--COMPETENCIAS-->
+
+      <header><h1 id="competencias" class="headers text-center shadow p-3 mb-4  rounded font-weight-bold font-italic fonte text-light">Competências</h1></header>
+      <div class="container">
+        <div class="col-md-9"><h1 class="font-weight-bold font-italic fonte text-light ml-5">Hard Skill</h1>
+        <ul>
+          <br>
+          <form>
+            <div class=" text-start ml-5 font-weight-bold font-italic fonte text-light">HTML</div>
+            <div class="rank">
+              <img class="icones " height="80px" src="https://image.flaticon.com/icons/png/512/888/888859.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form>
+            <div class=" text-start ml-5 font-weight-bold font-italic fonte text-light">CSS</div>
+            <div class="rank">
+               <img class="icones" height="80px" src="https://image.flaticon.com/icons/png/512/888/888847.png" alt="CSS">
+               <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+               <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+               <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+               <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+               <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form>
+            <div class=" text-start ml-5 font-weight-bold font-italic fonte text-light">Javascript</div>
+            <div class="rank">
+            <img class="icones" height="80px" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="javaScript">
+            <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+            <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form>
+            <div class=" text-start ml-5 font-weight-bold font-italic fonte text-light">java</div>
+            <div class="rank">
+              <img class="icones" height="80px" src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="java">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form>
+            <div class=" text-start ml-5 font-weight-bold font-italic fonte text-light">Spring Boot</div>
+            <div class="rank">
+              <img class="icones" height="80px" src="https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png" alt="Springboot">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form>
+            <div class=" text-start ml-5 font-weight-bold font-italic fonte text-light">Mysql</div>
+            <div class="rank">
+              <img class="icones" height="80px" src="https://image.flaticon.com/icons/png/512/288/288882.png" alt="MYsql">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form>
+            <div class=" text-start ml-5 font-weight-bold font-italic fonte text-light">Angular</div>
+            <div class="rank">
+              <img class="icones" height="80px" src="https://as2.ftcdn.net/v2/jpg/02/95/03/85/1000_F_295038577_yyg6PAw7aePNxEj7noPWr1RCusUTNJCC.jpg" alt="angular">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+            </div>
+          </form>
+        </ul>
+
+        </div>
+            <div class="col-md-5"> <h1 class="font-weight-bold font-italic fonte text-light  ">Soft Skill</h1>
+              <br>
+              
+          <ul>
+           <form>
+            <div class=" text-right mr-5 font-weight-bold font-italic fonte text-light">Trabalho em equipe</div>
+             <div class="rank">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones" height="80px" src="https://image.flaticon.com/icons/png/512/917/917243.png" alt="javaScript"></li>
+             </div>
+           </form>
+          <br>
+          <br>
+          
+          <form>
+            <div class=" text-right mr-5 font-weight-bold font-italic fonte text-light">Comunicação</div>
+            <div class="rank">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones" height="80px" src="https://img.icons8.com/plasticine/2x/communication.png" alt="javaScript">
+            </div>
+          </form>
+          <br>
+          <br>
+         
+          <form>
+            <div class=" text-right mr-5 font-weight-bold font-italic fonte text-light">Proatividade</div>
+            <div class="rank">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones" height="80px" src="https://image.flaticon.com/icons/png/512/1341/1341864.png" alt="javaScript">
+            </div>
+          </form>
+          <br>
+          <br>
+        
+          <form>
+            <div class=" text-right mr-5 font-weight-bold font-italic fonte text-light">Empatia</div>
+            <div class="rank">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones" height="80px" src="https://img-premium.flaticon.com/png/512/2715/premium/2715428.png?token=exp=1624038093~hmac=6eb6099b941f68be1fb3a580602b99dc" alt="javaScript">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form>
+            <div class=" text-right mr-5 font-weight-bold font-italic fonte text-light">Criatividade</div>
+            <div class="rank">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones" height="80px" src="https://img-premium.flaticon.com/png/512/1601/premium/1601913.png?token=exp=1624038321~hmac=b02f35a40eaff7b5cff631f603885e3c" alt="javaScript">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form >
+            <div class=" text-right mr-5 font-weight-bold font-italic fonte text-light">Orientação ao detalhe</div>
+            <div class="rank">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones" height="80px" src="https://img-premium.flaticon.com/png/512/4426/premium/4426119.png?token=exp=1624038370~hmac=a6076f08bdc0e720bd8e3439464de457" alt="javaScript">
+            </div>
+          </form>
+          <br>
+          <br>
+          <form>
+            <div class=" text-right mr-5 font-weight-bold font-italic fonte text-light">Adaptabilidade</div>
+            <div class="rank">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1040/1040230.png" alt="html">
+              <img class="icones " height="40px" src="https://image.flaticon.com/icons/png/512/1828/1828961.png" alt="html">
+              <img class="icones" height="80px" src="https://img-premium.flaticon.com/png/512/3967/premium/3967065.png?token=exp=1624043936~hmac=13ca2383861f9d60120935976ba29f1f" alt="javaScript">
+            </div>
+          </form>
+         
+          
+          
+              </li>
+            </ul>
+          </div>
+      </div>
+      <hr>
+
+                                          <!--CONTATO-->
+
+
+      <header><h1 id="contato"  class="headers text-center shadow p-3 mb-5  rounded font-weight-bold font-italic fonte text-light">Contato</h1></header>
+        <div class="container justify-content-center">
+           <a href="https://www.linkedin.com/in/johnny-alison/" target="blank"> <img  class="icones mr-5" height="70px" src="https://image.flaticon.com/icons/png/512/124/124011.png" aria-hidden="true"></img></a>
+           <a href="https://api.whatsapp.com/send?phone=5511942904250&text=Estarei%20entrando%20em%20contato%20assim%20que%20visualizar%20sua%20mensagem." target="blank"> <img  class="icones mr-5" height="70px" src="https://image.flaticon.com/icons/png/512/134/134937.png" aria-hidden="true"></img></a>
+           <a href="https://github.com/johnny-rizzo" target="blank"> <img  class="icones mr-4" height="70px" src="https://image.flaticon.com/icons/png/512/919/919847.png" aria-hidden="true"></img></a>
+        </div>
+      <hr>
+     
+                                           <!--footer-->
+
+      <footer class="page-footer font-small pt-3 containerfooter">
+        <div class="footer-copyright bg-footer2 text-center py-3">
+            <span class=" text-light font-weight-bold font-italic">© 2021 Copyright: Direitos reservados á Johnny Alison de Lima</span>
+        </div>
+    </footer>
+ 
+</body>
+</html>
